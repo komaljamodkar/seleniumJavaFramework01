@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [flightbook]">
+  <listeners>
+    <listener class-name="utility.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="appUrl" value="http://demo.automationtesting.in/Register.html"/>
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="testCase.TCRegister01">
+        <methods>
+          <include name="initializeBaseTestSetup"/>
+          <include name="setUp"/>
+          <include name="teardown"/>
+          <include name="registerTest"/>
+        </methods>
+      </class> <!-- testCase.TCRegister01 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [flightbook] -->
